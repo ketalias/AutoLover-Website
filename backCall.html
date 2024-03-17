@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
+    <link href="/Users/roman07/Desktop/AutoSite/cssStyleAuto.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BackCall</title>
+</head>
+
+<body>
+    <header id="header">
+        <h1><a href="/Users/roman07/Desktop/AutoSite/AutoSite.html">AutoLover site</a></h1>
+
+
+    </header><br>
+
+    <div class="sidebar">
+        <nav class="navigator">
+            
+            <h4>Навігація:</h4>
+            <ul type="circle">
+                <li><a href="/Users/roman07/Desktop/AutoSite/AutoSite.html">Головна</a> </li>
+            
+                <li><a href="#footer">Про нас</a></li>
+            </ul><br>
+            
+        </nav>
+      </div>
+
+    <div id="back_call">
+        <h2>Форма зворотного зв'язку</h2> <br>
+        <form action="submit_feedback.php" method="post" enctype="multipart/form-data">
+            <label for="phone_number">Номер телефону для зворотного зв'язку:</label><br>
+            <input type="tel" id="phone_number" name="phone_number" required><br><br>
+
+            <label for="category">Категорія:</label><br>
+            <select id="category" name="category" required>
+                <option value="підтримка">Підтримка</option>
+                <option value="побажання">Побажання</option>
+                <option value="скарга">Скарга</option>
+                <option value="інше">Інше</option>
+            </select><br><br>
+
+            <label for="subject">Тема:</label><br>
+            <input type="text" id="subject" name="subject" required><br><br>
+
+            <label for="message">Текст повідомлення:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <label for="attachment">Прикріпити файл:</label><br>
+            <input type="file" id="attachment" name="attachment"><br><br>
+
+            <label for="contact_method">Спосіб для зворотного зв'язку:</label><br>
+            <input type="radio" id="contact_phone" name="contact_method" value="phone" required>
+            <label for="contact_phone">Телефон</label><br>
+            <input type="radio" id="contact_email" name="contact_method" value="email">
+            <label for="contact_email">Електронна пошта</label><br><br>
+
+            <input type="submit" value="Надіслати">
+        </form>
+    </div>
+
+    <footer id="footer">
+
+        <p><b>Про нас:</b> Ласкаво просимо до нашої компанії оренди автомобілів! Ми - команда професіоналів, яка працює
+            для вашого зручного та безпечного подорожування. Наша місія - забезпечити надійні автомобілі за доступною
+            ціною, щоб кожен клієнт міг насолоджуватися мандрівкою без турбот.
+
+            Головний менеджер нашої компанії, Роман Ковач, має багаторічний досвід у сфері автомобільного бізнесу та
+            безперечний професіоналізм у керуванні. Під його керівництвом ми постійно розвиваємося, вдосконалюємо сервіс
+            та дбаємо про задоволення потреб кожного клієнта</p>
+        <br>
+        <p>Наші контакти +380(63)5502526</p>
+
+        <div>
+            <a href="file:///Users/roman07/Desktop/AutoSite/Registration.html#footer">Реєстрація</a>
+            <a href="file:///Users/roman07/Desktop/AutoSite/backCall.html">Зворотній звязок</a></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
